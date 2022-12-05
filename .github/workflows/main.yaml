@@ -23,7 +23,6 @@ jobs:
           channel: 'stable'
           flutter-version: '3.3.9'
       - run: flutter pub get
-      - run: flutter test
       - run: flutter build apk --debug --split-per-abi
       - run: |
           flutter build ios --no-codesign
